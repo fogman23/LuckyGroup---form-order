@@ -1,0 +1,265 @@
+@import config
+
+*
+  font-family: "Montserrat", sans-serif
+
+.overlay
+  top: 0
+  left: 0
+  position: absolute
+  width: 100vw
+  height: 100vh
+  background-color: #F4F4F4  
+.modal-order
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  @media screen and ( max-width: 575px )
+    box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1)
+    border-radius: 1px
+    top: 0
+    transform: translate(-50%, 0)
+  &__container
+    width: 1120px
+    height: 500px
+    display: flex
+    @media screen and ( max-width: 575px )
+      flex-direction: column
+      overflow: auto
+      width: 320px
+      height: auto
+  &__column
+    width: 560px
+    position: relative
+    @media screen and ( max-width: 575px )
+      width: 320px
+
+.product-info
+  height: 500px
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  padding: 40px 0 35px 40px
+  background: linear-gradient(180deg, #428A60 0%, #35734F 100%)
+  box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1)
+  border-radius: 1px
+  @media screen and ( max-width: 575px )
+    padding: 40px 20px 37px 20px
+    height: 311px
+    flex-direction: row
+    align-items: start
+    background: none
+    background-color: #fff
+    box-shadow: none
+    border-radius: none
+  &__title, &__label
+    font-size: 18px
+    line-height: 130%
+    font-weight: 700
+    color: #fff
+    @media screen and ( max-width: 575px )
+      color: #212121
+  &__img
+    z-index: 6
+    position: absolute
+    bottom: 33px
+    right: 38px
+    @media screen and ( max-width: 575px )
+      width: 223px
+      height: 122px
+      top: 120px
+      right: 41px
+  &__ellipse
+    &-one
+      border-radius: 50%
+      background-color: #428A60
+      z-index: 5
+      position: absolute
+      top: 71px
+      left: 20px
+      width: 398px
+      height: 398px
+      @media screen and ( max-width: 575px )
+        width: 202px
+        height: 202px
+        top: 72px
+        left: 50%
+        transform: translateX(-50%)
+    &-two
+      border-radius: 50%
+      border: 20px solid #FFFFFF
+      opacity: 0.03
+      z-index: 4
+      position: absolute
+      top: -94px
+      left: 235px
+      width: 688px
+      height: 688px
+      @media screen and ( max-width: 575px )
+        display: none
+
+.order-info
+  position: relative
+  z-index: 8
+  background: #FFFFFF
+  box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1)
+  border-radius: 1px
+  height: 500px
+  @media screen and ( max-width: 575px )
+    box-shadow: none
+    border-radius: none
+    height: auto
+  &__title
+    height: 136px
+    background-color: #f8f8f8
+    font-size: 30px
+    line-height: 130%
+    font-weight: 800
+    padding: 29px 128px
+    text-align: center
+    border-radius: 0 30px 0 0
+    @media screen and ( max-width: 575px )
+      background-color: #fff
+      border-radius: none
+      padding: 0
+      padding: 0 20px
+      width: 320px
+      height: auto
+  &__form
+    margin-top: 52px
+    margin-left: auto
+    margin-right: auto
+    width: 320px
+    @media screen and ( max-width: 575px )
+      width: 280px
+      margin-top: 28px
+  &__security
+    display: none
+    margin-top: 28px
+    width: 100%
+    height: 40px
+    background-color: #f8f8f8
+    text-align: center
+    font-size: 14px
+    line-height: 40px
+    color: #212121
+    font-weight: 700
+    span
+      margin: 0 20px
+    @media screen and ( max-width: 575px )
+      display: block
+.order-form
+  &__label
+    width: 100%
+    font-size: 12px
+    line-height: 130%
+    font-weight: 800
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    margin-bottom: 10px
+    color: #212121
+    span
+      color: #428A60
+  &__input-name
+    width: 100%
+    height: 50px
+    padding: 16px 20px
+    background-color: #f8f8f8
+    border-radius: 5px
+    border: 1px solid #e4e4e4
+    margin-bottom: 20px
+    font-size: 14px
+    color: #212121
+    transition: 0.5s
+    @media screen and ( max-width: 575px )
+      padding: 16px 10px
+    &::placeholder
+      color: #212121
+      opacity: 0.2
+    &:focus
+      border: 1px solid #428a60
+  &__input-phone
+    width: 184px
+    height: 50px
+    padding: 16px 20px
+    background-color: #f8f8f8
+    border-radius: 5px
+    border: 1px solid #e4e4e4
+    margin-bottom: 20px
+    font-size: 14px
+    color: #212121
+    transition: 0.5s
+    &::placeholder
+      color: #212121
+      opacity: 0.2
+    &:focus
+      border: 1px solid #428a60
+    @media screen and ( max-width: 575px )
+      width: 170px
+      padding: 16px 10px
+  &__btn
+    margin-top: 18px
+    width: 100%
+    height: 42px
+    background-color: #428a60
+    border-radius: 5px
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #fff
+    border: none
+    &-icon
+      margin-left: 10px
+    @media screen and ( max-width: 575px )
+      margin-top: 8px
+
+.select-form
+  display: inline-block
+  width: 116px
+  height: 50px
+  background-color: #f8f8f8
+  border-radius: 5px
+  border: 1px solid #e4e4e4
+  margin-bottom: 20px
+  margin-left: 15px
+  font-size: 14px
+  line-height: 130%
+  color: #212121
+  cursor: pointer
+  transition: 0.5s
+  @media screen and ( max-width: 575px )
+    width: 95px
+    margin-left: 10px
+  &.is-active
+    border: 1px solid #428a60
+  &__header
+    padding: 16px 20px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @media screen and ( max-width: 575px )
+      padding: 16px 10px
+  &__body
+    position: absolute
+    display: none
+    padding: 5px 0
+    background-color: #f8f8f8
+    width: 116px
+    border-radius: 5px
+    border: 1px solid #e4e4e4
+    @media screen and ( max-width: 575px )
+      width: 96px
+  &__item
+    padding: 8px 20px
+    transition: background-color 0.3s ease
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &:hover
+      background-color: #428a60
+.select-form.is-active .select-form__body
+  display: block
+      
+

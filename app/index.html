@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Form order</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/flag-icon.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+	<div class="overlay">
+		<div class="modal-order">
+			<div class="modal-order__container">
+				<div class="modal-order__column">
+					<div class="product-info">
+						<div class="product-info__title">Reduslim</div>
+						<div class="product-info__label">ECO</div>
+						<img class="product-info__img" src="images/dest/image.png" alt="product">
+						<div class="product-info__ellipse-one"></div>
+						<div class="product-info__ellipse-two"></div>
+					</div>
+				</div>
+				<div class="modal-order__column">
+					<div class="order-info">
+						<div class="order-info__title">Сделай шаг к выздоровлению</div>
+						<div class="order-info__form">
+							<form action="" class="order-form">
+								<label class="order-form__label" for="name">Ваше <span>имя</span></label>
+								<input class="order-form__input-name" name="name" type="text" placeholder="Введите ваше имя">
+								<label class="order-form__label" for="phone">Ваш <span>телефон</span></label>
+								<input class="order-form__input-phone" name="phone" type="text" placeholder="+7 (123) 456 78-90">
+								<div class="order-form__select select-form">
+									<div class="select-form__header">
+										<span class="select-form__current">RU</span>
+										<div class="select-form__current-icon"><span class="flag-icon flag-icon-ru"></span></div>
+										<div class="select-form__icon">
+											<svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.18182 1L5.18182 5L9.18182 1" stroke="#212121" stroke-width="2"
+													stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</div>
+									</div>
+									<div class="select-form__body">
+										<div class="select-form__item">RU <span class="flag-icon flag-icon-ru"></span>
+										</div>
+										<div class="select-form__item">UA <span class="flag-icon flag-icon-ua"></span>
+										</div>
+										<div class="select-form__item">KZ <span class="flag-icon flag-icon-kz"></span>
+										</div>
+										<div class="select-form__item">BY <span class="flag-icon flag-icon-by"></span>
+										</div>
+										<div class="select-form__item">CN <span class="flag-icon flag-icon-cn"></span>
+										</div>
+									</div>
+								</div>
+								<button class="order-form__btn" type="submit">Заказать
+									<span class="order-form__btn-icon">
+										<svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.5 6H16.5M16.5 6L11.5 1M16.5 6L11.5 11" stroke="white" stroke-width="2"
+												stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</span>
+								</button>
+							</form>
+						</div>
+						<div class="order-info__security">
+							Trusted
+							<span>
+								<svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect y="5.71429" width="12.1429" height="9.28572" rx="3" fill="#428A60" />
+									<path
+										d="M3.14282 3.92857C3.14282 2.31116 4.45399 1 6.07139 1C7.6888 1 8.99997 2.31117 8.99997 3.92857V6.85714H3.14282V3.92857Z"
+										stroke="#428A60" stroke-width="2" />
+								</svg>
+							</span>
+							Secure
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+</body>
+
+</html>
